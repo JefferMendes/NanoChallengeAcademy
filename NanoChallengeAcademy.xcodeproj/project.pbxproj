@@ -13,6 +13,7 @@
 		F43A9B4721C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B4521C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld */; };
 		F43A9B4921C2D1A4006C669A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43A9B4821C2D1A4006C669A /* Assets.xcassets */; };
 		F43A9B4C21C2D1A4006C669A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43A9B4A21C2D1A4006C669A /* LaunchScreen.storyboard */; };
+		F43A9B6021C2E9BD006C669A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F43A9B4821C2D1A4006C669A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43A9B4B21C2D1A4006C669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F43A9B4D21C2D1A4006C669A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F43A9B4A21C2D1A4006C669A /* LaunchScreen.storyboard */,
 				F43A9B4D21C2D1A4006C669A /* Info.plist */,
 				F43A9B4521C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld */,
+				F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */,
 			);
 			path = NanoChallengeAcademy;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				F43A9B4121C2D1A2006C669A /* ViewController.swift in Sources */,
 				F43A9B4721C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld in Sources */,
+				F43A9B6021C2E9BD006C669A /* CoreDataManager.swift in Sources */,
 				F43A9B3F21C2D1A2006C669A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
