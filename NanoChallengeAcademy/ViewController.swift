@@ -12,6 +12,10 @@ import CoreData
 class ViewController: UIViewController {
     
     @IBOutlet weak var productTable: UITableView!
+    
+    @IBAction func addProduct(_ sender: Any) {
+        //Funcao para entrar na AddProductModalViewController
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

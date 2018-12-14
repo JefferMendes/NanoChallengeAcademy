@@ -9,27 +9,29 @@
 import UIKit
 
 class AddProductModalViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameTxtField: UITextField!
+    @IBOutlet weak var placeTxtField: UITextField!
+    @IBOutlet weak var priceTxtField: UITextField!
+    
+    @IBAction func sendProduct(_ sender: Any) {
+        //Funcao para enviar os dados das text fields para o coredata
+        //Lembrar de pegar a data da ação!
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        //Dismiss no modal
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
