@@ -9,6 +9,10 @@
 import UIKit
 
 class DescriptionTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var nameDescriptionProduct: UILabel!
+    @IBOutlet weak var placeDescriptionProduct: UILabel!
+    @IBOutlet weak var priceDescriptionProduct: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

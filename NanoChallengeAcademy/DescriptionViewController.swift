@@ -9,9 +9,15 @@
 import UIKit
 
 class DescriptionViewController: UIViewController {
+    
+    @IBOutlet weak var productDescriptionTable: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        productDescriptionTable.delegate = self
+        productDescriptionTable.dataSource = self
+        
 
         // Do any additional setup after loading the view.
     }
