@@ -11,6 +11,8 @@
 		2E2F839721C421ED00FB7AEC /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */; };
 		2E2F839921C4221800FB7AEC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */; };
 		2E2F839B21C4223900FB7AEC /* DescriptionVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */; };
+		6E9B8B7F21C427700072DA82 /* AddProductModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9B8B7E21C427700072DA82 /* AddProductModalViewController.swift */; };
+		6E9B8B8121C4279B0072DA82 /* Searches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9B8B8021C4279B0072DA82 /* Searches.swift */; };
 		F43A9B3F21C2D1A2006C669A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B3E21C2D1A2006C669A /* AppDelegate.swift */; };
 		F43A9B4121C2D1A2006C669A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B4021C2D1A2006C669A /* ViewController.swift */; };
 		F43A9B4421C2D1A3006C669A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43A9B4221C2D1A3006C669A /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVCExtension.swift; sourceTree = "<group>"; };
+		6E9B8B7E21C427700072DA82 /* AddProductModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductModalViewController.swift; sourceTree = "<group>"; };
+		6E9B8B8021C4279B0072DA82 /* Searches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searches.swift; sourceTree = "<group>"; };
 		F43A9B3B21C2D1A2006C669A /* NanoChallengeAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallengeAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43A9B3E21C2D1A2006C669A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43A9B4021C2D1A2006C669A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */,
 				2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */,
 				2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */,
+				6E9B8B7E21C427700072DA82 /* AddProductModalViewController.swift */,
+				6E9B8B8021C4279B0072DA82 /* Searches.swift */,
 			);
 			path = NanoChallengeAcademy;
 			sourceTree = "<group>";
@@ -158,6 +164,8 @@
 			files = (
 				F43A9B4121C2D1A2006C669A /* ViewController.swift in Sources */,
 				F43A9B4721C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld in Sources */,
+				6E9B8B7F21C427700072DA82 /* AddProductModalViewController.swift in Sources */,
+				6E9B8B8121C4279B0072DA82 /* Searches.swift in Sources */,
 				F43A9B6021C2E9BD006C669A /* CoreDataManager.swift in Sources */,
 				F43B442221C41C9200FE0A4F /* ViewControllerExtension.swift in Sources */,
 				F43A9B3F21C2D1A2006C669A /* AppDelegate.swift in Sources */,
