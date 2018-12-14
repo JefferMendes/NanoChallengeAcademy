@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,4 +21,18 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+}
+
+extension ViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        let fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
+
+        if searchText != ""{
+            let predicate = NSPredicate(format: "nome CONTAINS[cd] %@", searchText)
+            //let predicate = NSPredicate(format: "precos CONTAINS[cd] %@", searchText)
+            fetchRequest.predicate = predicate
+        }
+
+//        self.productList = try? CoreDataManager.context.fetch(fetchRequest)
+    }
 }

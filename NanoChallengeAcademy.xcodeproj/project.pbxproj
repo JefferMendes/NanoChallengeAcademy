@@ -21,6 +21,7 @@
 		F43A9B4C21C2D1A4006C669A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43A9B4A21C2D1A4006C669A /* LaunchScreen.storyboard */; };
 		F43A9B6021C2E9BD006C669A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */; };
 		F43B442221C41C9200FE0A4F /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */; };
+		F43B442421C4425A00FE0A4F /* ProductExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B442321C4425A00FE0A4F /* ProductExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F43A9B4D21C2D1A4006C669A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		F43B442321C4425A00FE0A4F /* ProductExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */,
 				6E9B8B7E21C427700072DA82 /* AddProductModalViewController.swift */,
 				6E9B8B8021C4279B0072DA82 /* Searches.swift */,
+				F43B442321C4425A00FE0A4F /* ProductExtension.swift */,
 			);
 			path = NanoChallengeAcademy;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				F43A9B4121C2D1A2006C669A /* ViewController.swift in Sources */,
 				F43A9B4721C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld in Sources */,
 				6E9B8B7F21C427700072DA82 /* AddProductModalViewController.swift in Sources */,
+				F43B442421C4425A00FE0A4F /* ProductExtension.swift in Sources */,
 				6E9B8B8121C4279B0072DA82 /* Searches.swift in Sources */,
 				F43A9B6021C2E9BD006C669A /* CoreDataManager.swift in Sources */,
 				F43B442221C41C9200FE0A4F /* ViewControllerExtension.swift in Sources */,
