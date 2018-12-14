@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2F839521C421E000FB7AEC /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839421C421E000FB7AEC /* ProductTableViewCell.swift */; };
+		2E2F839721C421ED00FB7AEC /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */; };
+		2E2F839921C4221800FB7AEC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */; };
+		2E2F839B21C4223900FB7AEC /* DescriptionVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */; };
 		F43A9B3F21C2D1A2006C669A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B3E21C2D1A2006C669A /* AppDelegate.swift */; };
 		F43A9B4121C2D1A2006C669A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B4021C2D1A2006C669A /* ViewController.swift */; };
 		F43A9B4421C2D1A3006C669A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43A9B4221C2D1A3006C669A /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2F839421C421E000FB7AEC /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVCExtension.swift; sourceTree = "<group>"; };
 		F43A9B3B21C2D1A2006C669A /* NanoChallengeAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallengeAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43A9B3E21C2D1A2006C669A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43A9B4021C2D1A2006C669A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +77,10 @@
 				F43A9B4521C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld */,
 				F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */,
 				F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */,
+				2E2F839421C421E000FB7AEC /* ProductTableViewCell.swift */,
+				2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */,
+				2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */,
+				2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */,
 			);
 			path = NanoChallengeAcademy;
 			sourceTree = "<group>";
@@ -149,6 +161,10 @@
 				F43A9B6021C2E9BD006C669A /* CoreDataManager.swift in Sources */,
 				F43B442221C41C9200FE0A4F /* ViewControllerExtension.swift in Sources */,
 				F43A9B3F21C2D1A2006C669A /* AppDelegate.swift in Sources */,
+				2E2F839921C4221800FB7AEC /* DescriptionViewController.swift in Sources */,
+				2E2F839721C421ED00FB7AEC /* DescriptionTableViewCell.swift in Sources */,
+				2E2F839B21C4223900FB7AEC /* DescriptionVCExtension.swift in Sources */,
+				2E2F839521C421E000FB7AEC /* ProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
