@@ -12,23 +12,35 @@ import CoreData
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //Retornar tamanho do "vetor" de produtos
-        return 0
+        print("Exibindo product count")
+        print(productList.count)
+        return productList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath) as! ProductTableViewCell
-        //Popular viewcontroller inicial
+        let prod = productList[indexPath.row]
+        
+        cell.nameProduct.text = prod.nome
+        print("Passou por aqui vlw")
+        print(prod.nome)
+        
+        let r = prod.menorPreco()
+        cell.priceProduct.text = String(r.1)
+        cell.placeProduct.text = r.0
+        
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //Lembrar de passar o ID da Storyboard = DescriptionViewController | Nao confundir com identifier
-        let vc = storyboard?.instantiateViewController(withIdentifier: "DescriptionViewController") as? DescriptionViewController
-        //Popular viewcontroller secundaria
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as? DescriptionViewController
         
-        self.navigationController?.pushViewController(vc!, animated: true)
+        destination?.products = productList[(productTable.indexPathForSelectedRow?.row)!]
     }
     
 }

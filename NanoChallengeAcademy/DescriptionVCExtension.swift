@@ -12,14 +12,27 @@ import UIKit
 extension DescriptionViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Retornar tamanho do "vetor" de produtos clicados
-        return 0
+        return (products?.precos.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Supostamente aqui deve ser populado a partir da primeira viewcontroller, nao sei como trabalhar com isso
-        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionCell", for: indexPath) as! DescriptionTableViewCell
+        let local = keys[indexPath.row]
+        let preco = values[indexPath.row]
+        
+        cell.placeDescriptionProduct.text = local
+        cell.priceDescriptionProduct.text = String(preco)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return products?.nome
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {

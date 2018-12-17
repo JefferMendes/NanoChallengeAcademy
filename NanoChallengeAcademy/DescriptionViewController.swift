@@ -11,6 +11,9 @@ import UIKit
 class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var productDescriptionTable: UITableView!
+    var products: ProductForView?
+    var keys = [String]()
+    var values = [Double]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,10 @@ class DescriptionViewController: UIViewController {
         productDescriptionTable.delegate = self
         productDescriptionTable.dataSource = self
         
+        for (key, value) in (products?.precos)! {
+            keys.append(key)
+            values.append(value)
+        }
 
         // Do any additional setup after loading the view.
     }

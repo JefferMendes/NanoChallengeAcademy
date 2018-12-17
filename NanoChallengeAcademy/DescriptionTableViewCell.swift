@@ -13,7 +13,8 @@ class DescriptionTableViewCell: UITableViewCell {
     @IBOutlet weak var nameDescriptionProduct: UILabel!
     @IBOutlet weak var placeDescriptionProduct: UILabel!
     @IBOutlet weak var priceDescriptionProduct: UILabel!
-
+    @IBOutlet weak var dateDescriptionProduct: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

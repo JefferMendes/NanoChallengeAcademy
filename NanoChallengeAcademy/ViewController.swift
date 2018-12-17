@@ -13,17 +13,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var productTable: UITableView!
     
-    var productList = [ProductForView]()
-    
-    @IBAction func addProduct(_ sender: Any) {
-        //Funcao para entrar na AddProductModalViewController
+    var productList = [ProductForView]() {
+        didSet {
+            self.productTable.reloadData()
+            print("ACHOU")
+            print(productList.count)
+        }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //productTable.delegate = self
-        //productTable.dataSource = self
+        productTable.delegate = self
+        productTable.dataSource = self
         
         
         
@@ -33,13 +35,13 @@ class ViewController: UIViewController {
         
 //        let produto = Produto(context: CoreDataManager.context)
 //
-//        produto.nome = "Carne"
+//        produto.nome = "Arroz"
 //        produto.estabelecimento = "Extra"
-//        produto.preco = 4
+//        produto.preco = 2
 //
 //
 //        CoreDataManager.saveContext()
-        
+//
         /* Inicio da Busca */
         
         var fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
