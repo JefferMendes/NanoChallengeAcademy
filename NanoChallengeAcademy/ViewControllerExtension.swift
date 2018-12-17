@@ -12,13 +12,23 @@ import CoreData
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Retornar tamanho do "vetor" de produtos
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath) as! ProductTableViewCell
+        //Popular viewcontroller inicial
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Lembrar de passar o ID da Storyboard = DescriptionViewController | Nao confundir com identifier
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DescriptionViewController") as? DescriptionViewController
+        //Popular viewcontroller secundaria
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
 }

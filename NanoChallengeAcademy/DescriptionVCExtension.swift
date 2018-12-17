@@ -10,14 +10,13 @@ import Foundation
 import UIKit
 
 extension DescriptionViewController: UITableViewDelegate, UITableViewDataSource {
-//    uma extension nao pode conter variaveis no escopo, adicionei direto na funcao que faz o swipe, talvez nao de certo. Caso nao de, juntar a extension com a DescriptionViewController no mesmo arquivo
-//    var editTxtField: UITextField?
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Retornar tamanho do "vetor" de produtos clicados
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //Supostamente aqui deve ser populado a partir da primeira viewcontroller, nao sei como trabalhar com isso
         let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
         
         return cell
