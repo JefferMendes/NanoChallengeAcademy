@@ -28,6 +28,7 @@
 		F43A9B6021C2E9BD006C669A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */; };
 		F43B442221C41C9200FE0A4F /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */; };
 		F43B442421C4425A00FE0A4F /* ProductExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B442321C4425A00FE0A4F /* ProductExtension.swift */; };
+		F43BFD8421C8349A00E7B805 /* ProductForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BFD8321C8349A00E7B805 /* ProductForView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		F43B442321C4425A00FE0A4F /* ProductExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductExtension.swift; sourceTree = "<group>"; };
+		F43BFD8321C8349A00E7B805 /* ProductForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductForView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */,
 				F43A9B4821C2D1A4006C669A /* Assets.xcassets */,
 				F43A9B4521C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld */,
+				F43BFD8321C8349A00E7B805 /* ProductForView.swift */,
 			);
 			path = NanoChallengeAcademy;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				2E2F839721C421ED00FB7AEC /* DescriptionTableViewCell.swift in Sources */,
 				2E2F839B21C4223900FB7AEC /* DescriptionVCExtension.swift in Sources */,
 				2E2F839521C421E000FB7AEC /* ProductTableViewCell.swift in Sources */,
+				F43BFD8421C8349A00E7B805 /* ProductForView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
