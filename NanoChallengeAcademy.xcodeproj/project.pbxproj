@@ -11,14 +11,20 @@
 		2E2F839721C421ED00FB7AEC /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */; };
 		2E2F839921C4221800FB7AEC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */; };
 		2E2F839B21C4223900FB7AEC /* DescriptionVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */; };
+		2E43BEE921C824EB00BDE514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E43BEE821C824EA00BDE514 /* Main.storyboard */; };
+		2E43BEEB21C8250300BDE514 /* Fundo_03_600.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E43BEEA21C8250300BDE514 /* Fundo_03_600.png */; };
+		2E43BEED21C8250F00BDE514 /* Letras_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E43BEEC21C8250F00BDE514 /* Letras_01.png */; };
+		2E43BEEF21C8252300BDE514 /* Letras_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E43BEEE21C8252300BDE514 /* Letras_02.png */; };
+		2E43BEF121C8254C00BDE514 /* BackGround_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E43BEF021C8254C00BDE514 /* BackGround_01.jpg */; };
+		2E43BEF321C8256000BDE514 /* maiscompras_Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E43BEF221C8256000BDE514 /* maiscompras_Logo.jpg */; };
+		2E43BEF521C8256900BDE514 /* Fundo_04_800.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E43BEF421C8256900BDE514 /* Fundo_04_800.png */; };
+		2E43BEF721C8257A00BDE514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E43BEF621C8257900BDE514 /* LaunchScreen.storyboard */; };
 		6E9B8B7F21C427700072DA82 /* AddProductModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9B8B7E21C427700072DA82 /* AddProductModalViewController.swift */; };
 		6E9B8B8121C4279B0072DA82 /* Searches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9B8B8021C4279B0072DA82 /* Searches.swift */; };
 		F43A9B3F21C2D1A2006C669A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B3E21C2D1A2006C669A /* AppDelegate.swift */; };
 		F43A9B4121C2D1A2006C669A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B4021C2D1A2006C669A /* ViewController.swift */; };
-		F43A9B4421C2D1A3006C669A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43A9B4221C2D1A3006C669A /* Main.storyboard */; };
 		F43A9B4721C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B4521C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld */; };
 		F43A9B4921C2D1A4006C669A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43A9B4821C2D1A4006C669A /* Assets.xcassets */; };
-		F43A9B4C21C2D1A4006C669A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43A9B4A21C2D1A4006C669A /* LaunchScreen.storyboard */; };
 		F43A9B6021C2E9BD006C669A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */; };
 		F43B442221C41C9200FE0A4F /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */; };
 		F43B442421C4425A00FE0A4F /* ProductExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B442321C4425A00FE0A4F /* ProductExtension.swift */; };
@@ -29,15 +35,21 @@
 		2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVCExtension.swift; sourceTree = "<group>"; };
+		2E43BEE821C824EA00BDE514 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2E43BEEA21C8250300BDE514 /* Fundo_03_600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fundo_03_600.png; sourceTree = "<group>"; };
+		2E43BEEC21C8250F00BDE514 /* Letras_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Letras_01.png; sourceTree = "<group>"; };
+		2E43BEEE21C8252300BDE514 /* Letras_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Letras_02.png; sourceTree = "<group>"; };
+		2E43BEF021C8254C00BDE514 /* BackGround_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGround_01.jpg; sourceTree = "<group>"; };
+		2E43BEF221C8256000BDE514 /* maiscompras_Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maiscompras_Logo.jpg; sourceTree = "<group>"; };
+		2E43BEF421C8256900BDE514 /* Fundo_04_800.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fundo_04_800.png; sourceTree = "<group>"; };
+		2E43BEF621C8257900BDE514 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E9B8B7E21C427700072DA82 /* AddProductModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductModalViewController.swift; sourceTree = "<group>"; };
 		6E9B8B8021C4279B0072DA82 /* Searches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searches.swift; sourceTree = "<group>"; };
 		F43A9B3B21C2D1A2006C669A /* NanoChallengeAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallengeAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43A9B3E21C2D1A2006C669A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43A9B4021C2D1A2006C669A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F43A9B4321C2D1A3006C669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F43A9B4621C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NanoChallengeAcademy.xcdatamodel; sourceTree = "<group>"; };
 		F43A9B4821C2D1A4006C669A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F43A9B4B21C2D1A4006C669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F43A9B4D21C2D1A4006C669A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -74,22 +86,28 @@
 		F43A9B3D21C2D1A2006C669A /* NanoChallengeAcademy */ = {
 			isa = PBXGroup;
 			children = (
-				F43A9B3E21C2D1A2006C669A /* AppDelegate.swift */,
-				F43A9B4021C2D1A2006C669A /* ViewController.swift */,
-				F43A9B4221C2D1A3006C669A /* Main.storyboard */,
-				F43A9B4821C2D1A4006C669A /* Assets.xcassets */,
-				F43A9B4A21C2D1A4006C669A /* LaunchScreen.storyboard */,
+				2E43BEF021C8254C00BDE514 /* BackGround_01.jpg */,
+				2E43BEF221C8256000BDE514 /* maiscompras_Logo.jpg */,
 				F43A9B4D21C2D1A4006C669A /* Info.plist */,
-				F43A9B4521C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld */,
-				F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */,
-				F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */,
-				2E2F839421C421E000FB7AEC /* ProductTableViewCell.swift */,
-				2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */,
-				2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */,
-				2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */,
+				2E43BEEA21C8250300BDE514 /* Fundo_03_600.png */,
+				2E43BEF421C8256900BDE514 /* Fundo_04_800.png */,
+				2E43BEEC21C8250F00BDE514 /* Letras_01.png */,
+				2E43BEEE21C8252300BDE514 /* Letras_02.png */,
+				2E43BEF621C8257900BDE514 /* LaunchScreen.storyboard */,
+				2E43BEE821C824EA00BDE514 /* Main.storyboard */,
 				6E9B8B7E21C427700072DA82 /* AddProductModalViewController.swift */,
-				6E9B8B8021C4279B0072DA82 /* Searches.swift */,
+				F43A9B3E21C2D1A2006C669A /* AppDelegate.swift */,
+				F43A9B5F21C2E9BD006C669A /* CoreDataManager.swift */,
+				2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */,
+				2E2F839A21C4223900FB7AEC /* DescriptionVCExtension.swift */,
+				2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */,
 				F43B442321C4425A00FE0A4F /* ProductExtension.swift */,
+				2E2F839421C421E000FB7AEC /* ProductTableViewCell.swift */,
+				6E9B8B8021C4279B0072DA82 /* Searches.swift */,
+				F43A9B4021C2D1A2006C669A /* ViewController.swift */,
+				F43B442121C41C9200FE0A4F /* ViewControllerExtension.swift */,
+				F43A9B4821C2D1A4006C669A /* Assets.xcassets */,
+				F43A9B4521C2D1A3006C669A /* NanoChallengeAcademy.xcdatamodeld */,
 			);
 			path = NanoChallengeAcademy;
 			sourceTree = "<group>";
@@ -152,9 +170,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F43A9B4C21C2D1A4006C669A /* LaunchScreen.storyboard in Resources */,
+				2E43BEF121C8254C00BDE514 /* BackGround_01.jpg in Resources */,
+				2E43BEEF21C8252300BDE514 /* Letras_02.png in Resources */,
+				2E43BEF321C8256000BDE514 /* maiscompras_Logo.jpg in Resources */,
+				2E43BEF721C8257A00BDE514 /* LaunchScreen.storyboard in Resources */,
 				F43A9B4921C2D1A4006C669A /* Assets.xcassets in Resources */,
-				F43A9B4421C2D1A3006C669A /* Main.storyboard in Resources */,
+				2E43BEED21C8250F00BDE514 /* Letras_01.png in Resources */,
+				2E43BEEB21C8250300BDE514 /* Fundo_03_600.png in Resources */,
+				2E43BEE921C824EB00BDE514 /* Main.storyboard in Resources */,
+				2E43BEF521C8256900BDE514 /* Fundo_04_800.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,25 +205,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F43A9B4221C2D1A3006C669A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F43A9B4321C2D1A3006C669A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F43A9B4A21C2D1A4006C669A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F43A9B4B21C2D1A4006C669A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F43A9B4E21C2D1A4006C669A /* Debug */ = {

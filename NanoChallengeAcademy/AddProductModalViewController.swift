@@ -17,6 +17,8 @@ class AddProductModalViewController: UIViewController {
     @IBAction func sendProduct(_ sender: Any) {
         //Funcao para enviar os dados das text fields para o coredata
         //Lembrar de pegar a data da ação!
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancel(_ sender: Any) {
