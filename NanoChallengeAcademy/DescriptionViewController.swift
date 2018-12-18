@@ -13,7 +13,11 @@ class DescriptionViewController: UIViewController {
     @IBOutlet weak var productDescriptionTable: UITableView!
     var products: ProductForView?
     var keys = [String]()
-    var values = [Double]()
+    var values = [Double]() {
+        didSet {
+            productDescriptionTable.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

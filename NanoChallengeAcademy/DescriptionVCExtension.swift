@@ -8,11 +8,12 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 extension DescriptionViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Retornar tamanho do "vetor" de produtos clicados
-        return (products?.precos.count)!
+        return (keys.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -44,8 +45,42 @@ extension DescriptionViewController: UITableViewDelegate, UITableViewDataSource 
                 
                 if let userInput = editTxtField!.text {
                     //Inserir funcao para enviar para o preco para o coredata
+                    let fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
+                    
+                    let predicate1 = NSPredicate(format: "estabelecimento CONTAINS[cd] %@", self.keys[indexPath.row])
+                    let predicate2 = NSPredicate(format: "nome CONTAINS[cd] %@", (self.products?.nome)!)
+                    
+                    let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate1,predicate2])
+                    
+                    fetchRequest.predicate = predicate
+                    
+                    let produto = try? CoreDataManager.context.fetch(fetchRequest)
+                    
+                    produto?.first?.preco = Double(userInput)!
+                    
+                    CoreDataManager.saveContext()
+                    
+//                    self.values[indexPath.row] = Double(userInput)!
+                    
+                    self.products?.precos[self.keys[indexPath.row]] = Double(userInput)!
+                    
+                    let p = self.products?.precos.sorted(by: { (a, b) -> Bool in
+                        a.value < b.value
+                    })
+                    
+                    self.keys.removeAll()
+                    self.values.removeAll()
+                    
+                    for (key, value) in p! {
+                        self.keys.append(key)
+                        self.values.append(value)
+                    }
+                    
                     print("User entered \(userInput)")
                 }
+                
+                
+                
             })
             let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
                 print("Cancel button tapped")
