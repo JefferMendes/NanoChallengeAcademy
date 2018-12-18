@@ -21,10 +21,17 @@ class DescriptionViewController: UIViewController {
         productDescriptionTable.delegate = self
         productDescriptionTable.dataSource = self
         
-        for (key, value) in (products?.precos)! {
+        let p = products?.precos.sorted(by: { (a, b) -> Bool in
+            a.value < b.value
+        })
+        
+        
+        
+        for (key, value) in p! {
             keys.append(key)
             values.append(value)
         }
+        
 
         // Do any additional setup after loading the view.
     }
