@@ -47,14 +47,14 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        let fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
+        //let fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
 
-        if searchText != ""{
-            let predicate = NSPredicate(format: "nome CONTAINS[cd] %@", searchText)
-            //let predicate = NSPredicate(format: "precos CONTAINS[cd] %@", searchText)
-            fetchRequest.predicate = predicate
-        }
-
+//        if searchText != ""{
+//            let predicate = NSPredicate(format: "nome CONTAINS[cd] %@", searchText)
+//            //let predicate = NSPredicate(format: "precos CONTAINS[cd] %@", searchText)
+//            fetchRequest.predicate = predicate
+//        }
+        productList = Searches.buscaCoreData(consulta: searchText)
 //        self.productList = try? CoreDataManager.context.fetch(fetchRequest)
     }
 }

@@ -12,6 +12,7 @@ import CoreData
 class ViewController: UIViewController {
     
     @IBOutlet weak var productTable: UITableView!
+    @IBOutlet weak var productSearchBar: UISearchBar!
     
     var productList = [ProductForView]() {
         didSet {
@@ -26,6 +27,9 @@ class ViewController: UIViewController {
         
         productTable.delegate = self
         productTable.dataSource = self
+        
+        productSearchBar.delegate = self
+        
         
         
         
@@ -44,7 +48,7 @@ class ViewController: UIViewController {
 //
         /* Inicio da Busca */
         
-        var fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
+        //var fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
         
         /* Filtro da Busca */
         
@@ -65,28 +69,30 @@ class ViewController: UIViewController {
         
         /* Requisição */
         
-        var products = try? CoreDataManager.context.fetch(fetchRequest)
+//        var products = try? CoreDataManager.context.fetch(fetchRequest)
+////
+//        products?.forEach({ (produto) in
+//            //print(produto)
+//            print(produto.nome)
+//            print(produto.preco)
+//            print(produto.estabelecimento)
 //
-        products?.forEach({ (produto) in
-            //print(produto)
-            print(produto.nome)
-            print(produto.preco)
-            print(produto.estabelecimento)
-            
-            if let element = productList.firstIndex(where: { (p) -> Bool in
-                produto.nome == p.nome
-            }) {
-                print(element)
-                productList[element].precos[produto.estabelecimento!] = produto.preco
-            } else {
-                print(false)
-                print(produto)
-                let product = ProductForView(nome:produto.nome!, precos: [produto.estabelecimento!:produto.preco])
-                productList.append(product)
-            }
-            
-            print(productList)
-        })
+//            if let element = productList.firstIndex(where: { (p) -> Bool in
+//                produto.nome == p.nome
+//            }) {
+//                print(element)
+//                productList[element].precos[produto.estabelecimento!] = produto.preco
+//            } else {
+//                print(false)
+//                print(produto)
+//                let product = ProductForView(nome:produto.nome!, precos: [produto.estabelecimento!:produto.preco])
+//                productList.append(product)
+//            }
+//
+//            print(productList)
+//        })
+        
+        productList = Searches.buscaCoreData(consulta: "")
         
         /*** Fim dos codigos de teste ***/
         
