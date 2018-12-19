@@ -11,13 +11,7 @@ import UIKit
 class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var productDescriptionTable: UITableView!
-    var products: ProductForView?
-    var keys = [String]()
-    var values = [Double]() {
-        didSet {
-            productDescriptionTable.reloadData()
-        }
-    }
+    var products: ProductForView? 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +19,7 @@ class DescriptionViewController: UIViewController {
         productDescriptionTable.delegate = self
         productDescriptionTable.dataSource = self
         
-        let p = products?.precos.sorted(by: { (a, b) -> Bool in
-            a.value < b.value
-        })
-        
-        
-        
-        for (key, value) in p! {
-            keys.append(key)
-            values.append(value)
-        }
+        self.products!.precos = (self.products?.precos.sorted { a ,b in a.preco < b.preco })!
         
 
         // Do any additional setup after loading the view.

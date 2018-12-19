@@ -12,8 +12,6 @@ import CoreData
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Exibindo product count")
-        print(productList.count)
         return productList.count
     }
     
@@ -21,14 +19,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath) as! ProductTableViewCell
         let prod = productList[indexPath.row]
         
-        cell.nameProduct.text = prod.nome
-        print("Passou por aqui vlw")
-        print(prod.nome)
+        cell.nameProduct.text = prod.precos.first?.nome
         
         let r = prod.menorPreco()
-        cell.priceProduct.text = String(r.1)
+        cell.priceProduct.text = String(format:"R$%.2f",r.1)
         cell.placeProduct.text = r.0
         
+        cell.dateProduct.text = r.2
         
         return cell
     }
@@ -47,14 +44,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        //let fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
-
-//        if searchText != ""{
-//            let predicate = NSPredicate(format: "nome CONTAINS[cd] %@", searchText)
-//            //let predicate = NSPredicate(format: "precos CONTAINS[cd] %@", searchText)
-//            fetchRequest.predicate = predicate
-//        }
         productList = Searches.buscaCoreData(consulta: searchText)
-//        self.productList = try? CoreDataManager.context.fetch(fetchRequest)
     }
 }

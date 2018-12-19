@@ -9,12 +9,12 @@
 import Foundation
 
 struct ProductForView {
-    var nome:String
-    var precos: [String:Double]
+//    var nome:String
+    var precos: [Produto]
     
-    func menorPreco() -> (String,Double){
-        let minValue = precos.min { a,b in a.value < b.value }
+    func menorPreco() -> (String,Double,String){
+        let minValue = precos.sorted { a ,b in a.preco < b.preco }
         
-        return minValue ?? ("",0)
+        return ((minValue.first?.estabelecimento)!, (minValue.first?.preco)!, (minValue.first?.data)!)
     }
 }

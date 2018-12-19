@@ -13,23 +13,27 @@ import CoreData
 extension DescriptionViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Retornar tamanho do "vetor" de produtos clicados
-        return (keys.count)
+        return (products?.precos.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Supostamente aqui deve ser populado a partir da primeira viewcontroller, nao sei como trabalhar com isso
         let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionCell", for: indexPath) as! DescriptionTableViewCell
-        let local = keys[indexPath.row]
-        let preco = values[indexPath.row]
+        let local = self.products?.precos[indexPath.row].estabelecimento
+        let data = self.products?.precos[indexPath.row].data
+        if let preco = (self.products?.precos[indexPath.row].preco){
+            cell.priceDescriptionProduct.text = String(format:"R$%.2f",preco)
+        }
         
         cell.placeDescriptionProduct.text = local
-        cell.priceDescriptionProduct.text = String(preco)
+        cell.dateDescriptionProduct.text = data
+        
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return products?.nome
+        return products?.precos.first?.nome
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -41,40 +45,38 @@ extension DescriptionViewController: UITableViewDelegate, UITableViewDataSource 
         let editPrice = UITableViewRowAction(style: .default, title: "Editar", handler: {(action: UITableViewRowAction, indexPath: IndexPath) -> Void in
             let alertController = UIAlertController(title: nil, message: "Digite o novo preço", preferredStyle: .alert)
             let send = UIAlertAction(title: "Enviar", style: .default, handler: { (action) -> Void in
-                print("Ok button tapped")
                 
                 if let userInput = editTxtField!.text {
                     //Inserir funcao para enviar para o preco para o coredata
                     let fetchRequest: NSFetchRequest<Produto> = Produto.fetchRequest()
                     
-                    let predicate1 = NSPredicate(format: "estabelecimento CONTAINS[cd] %@", self.keys[indexPath.row])
-                    let predicate2 = NSPredicate(format: "nome CONTAINS[cd] %@", (self.products?.nome)!)
+                    let predicate1 = NSPredicate(format: "estabelecimento CONTAINS[cd] %@", (self.products?.precos[indexPath.row].estabelecimento)!)
+                    let predicate2 = NSPredicate(format: "nome CONTAINS[cd] %@", (self.products?.precos.first!.nome)!)
                     
                     let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate1,predicate2])
                     
                     fetchRequest.predicate = predicate
                     
                     let produto = try? CoreDataManager.context.fetch(fetchRequest)
-                    
+
                     produto?.first?.preco = Double(userInput)!
+                    
+                    let currentDateTime = Date()
+                    let formatter = DateFormatter()
+                    formatter.timeStyle = .short
+                    formatter.dateStyle = .short
+                    
+                    produto?.first?.data = formatter.string(from: currentDateTime)
+                    
                     
                     CoreDataManager.saveContext()
                     
-//                    self.values[indexPath.row] = Double(userInput)!
+                    self.products?.precos[indexPath.row].preco = Double(userInput)!
                     
-                    self.products?.precos[self.keys[indexPath.row]] = Double(userInput)!
+                    self.products!.precos = (self.products?.precos.sorted { a ,b in a.preco < b.preco })!
                     
-                    let p = self.products?.precos.sorted(by: { (a, b) -> Bool in
-                        a.value < b.value
-                    })
-                    
-                    self.keys.removeAll()
-                    self.values.removeAll()
-                    
-                    for (key, value) in p! {
-                        self.keys.append(key)
-                        self.values.append(value)
-                    }
+                    self.productDescriptionTable.reloadData()
+
                     
                     print("User entered \(userInput)")
                 }
@@ -96,7 +98,7 @@ extension DescriptionViewController: UITableViewDelegate, UITableViewDataSource 
             self.present(alertController, animated: true, completion: nil)
         })
 
-        editPrice.backgroundColor = UIColor.green
+        editPrice.backgroundColor = UIColor(red: 0.02, green: 0.78, blue: 0.01, alpha: 1.0)
         return [editPrice]
     }
     

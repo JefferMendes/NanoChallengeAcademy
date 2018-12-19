@@ -17,18 +17,28 @@ class AddProductModalViewController: UIViewController {
     @IBAction func sendProduct(_ sender: Any) {
         //Funcao para enviar os dados das text fields para o coredata
         //Lembrar de pegar a data da ação!
-        let produto = Produto(context: CoreDataManager.context)
         
-        produto.nome = nameTxtField.text
-        produto.estabelecimento = placeTxtField.text
-        if let price = priceTxtField.text {
-            produto.preco = Double(price)!
+        if (nameTxtField.text != "" || placeTxtField.text != "" || priceTxtField.text != "") {
+            let produto = Produto(context: CoreDataManager.context)
+            
+            produto.nome = nameTxtField.text
+            produto.estabelecimento = placeTxtField.text
+            if let price = priceTxtField.text {
+                produto.preco = Double(price)!
+            }
+            
+            let currentDateTime = Date()
+            let formatter = DateFormatter()
+            formatter.timeStyle = .short
+            formatter.dateStyle = .short
+            
+            produto.data = formatter.string(from: currentDateTime)
+            
+            CoreDataManager.saveContext()
+        
+            self.dismiss(animated: true, completion: nil)
+            
         }
-//        produto.preco = priceTxtField.text
-        
-        CoreDataManager.saveContext()
-        
-        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancel(_ sender: Any) {

@@ -30,24 +30,15 @@ struct Searches {
         let products = try? CoreDataManager.context.fetch(fetchRequest)
         var productList = [ProductForView]()
         products?.forEach({ (produto) in
-            //print(produto)
-            //print(produto.nome)
-            //print(produto.preco)
-            //print(produto.estabelecimento)
             
             if let element = productList.firstIndex(where: { (p) -> Bool in
-                produto.nome == p.nome
+                produto.nome == p.precos.first?.nome
             }) {
-                //print(element)
-                productList[element].precos[produto.estabelecimento!] = produto.preco
+                productList[element].precos.append(produto)
             } else {
-                //print(false)
-                //print(produto)
-                let product = ProductForView(nome:produto.nome!, precos: [produto.estabelecimento!:produto.preco])
+                let product = ProductForView(precos: [produto])
                 productList.append(product)
             }
-            
-            //print(productList)
         })
         
         return productList
