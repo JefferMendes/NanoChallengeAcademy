@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maiscompras_Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dtb-u6-PGS">
-                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shopping-Cart-PNG-Background-Stock-Images-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dtb-u6-PGS">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="V7M-Uf-izO"/>
                                     <constraint firstAttribute="width" constant="300" id="lIu-Nx-04h"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Letras_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-F7-x7o">
-                                <rect key="frame" x="67" y="491" width="240" height="48"/>
+                                <rect key="frame" x="67" y="491.5" width="240" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="pgT-Su-TUi"/>
                                     <constraint firstAttribute="width" constant="240" id="w8w-jW-U5M"/>
@@ -51,6 +50,6 @@
     </scenes>
     <resources>
         <image name="Letras_02.png" width="590" height="157"/>
-        <image name="maiscompras_Logo.jpg" width="900" height="640"/>
+        <image name="Shopping-Cart-PNG-Background-Stock-Images-2.png" width="2331" height="2331"/>
     </resources>
 </document>

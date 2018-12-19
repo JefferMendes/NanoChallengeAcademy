@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1E020021CACA4C00AC2BEE /* Shopping-Cart-PNG-Background-Stock-Images-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E01FF21CACA4C00AC2BEE /* Shopping-Cart-PNG-Background-Stock-Images-2.png */; };
 		2E2F839521C421E000FB7AEC /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839421C421E000FB7AEC /* ProductTableViewCell.swift */; };
 		2E2F839721C421ED00FB7AEC /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */; };
 		2E2F839921C4221800FB7AEC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E1E01FF21CACA4C00AC2BEE /* Shopping-Cart-PNG-Background-Stock-Images-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shopping-Cart-PNG-Background-Stock-Images-2.png"; sourceTree = "<group>"; };
 		2E2F839421C421E000FB7AEC /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		2E2F839621C421ED00FB7AEC /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		2E2F839821C4221800FB7AEC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				2E43BEF221C8256000BDE514 /* maiscompras_Logo.jpg */,
 				F43A9B4D21C2D1A4006C669A /* Info.plist */,
 				2E43BEEA21C8250300BDE514 /* Fundo_03_600.png */,
+				2E1E01FF21CACA4C00AC2BEE /* Shopping-Cart-PNG-Background-Stock-Images-2.png */,
 				2E43BEF421C8256900BDE514 /* Fundo_04_800.png */,
 				2E43BEEC21C8250F00BDE514 /* Letras_01.png */,
 				2E43BEEE21C8252300BDE514 /* Letras_02.png */,
@@ -182,6 +185,7 @@
 				2E43BEEB21C8250300BDE514 /* Fundo_03_600.png in Resources */,
 				2E43BEE921C824EB00BDE514 /* Main.storyboard in Resources */,
 				2E43BEF521C8256900BDE514 /* Fundo_04_800.png in Resources */,
+				2E1E020021CACA4C00AC2BEE /* Shopping-Cart-PNG-Background-Stock-Images-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
